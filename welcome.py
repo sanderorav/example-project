@@ -1,5 +1,6 @@
 from validate_age import *
 from get_name import *
+from survey import *
 
 print('='*35)
 print('Welcome to voting eligibility check')
@@ -12,3 +13,9 @@ print(f'Hello {user_name}!\n')
 age = int(input("Enter your age: "))
 validate_age(age)
 
+survey_flag = input('Would you like to participate in our survey? (Y/N): ')
+
+if survey_flag == 'Y':
+    survey()
+    
+print('Thank you! Please visit again.\n\n')
